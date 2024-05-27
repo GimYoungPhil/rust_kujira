@@ -5,7 +5,7 @@ fn main() {
     for ent in files {
         let entry = ent.unwrap();
         let path = entry.path();
-        let fname = path.to_str().unwarp_or("올바르지 않은 파일 이름");
+        let fname = path.to_str().unwrap_or("올바르지 않은 파일 이름");
         println!("{}", fname);
     }
 }
